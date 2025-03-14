@@ -6,9 +6,3 @@
 
 [node name="BoidController" type="Node" parent="."]
 script = ExtResource("1_ig7tw")
-num_boids = 100
-boid_speed = 10.0
-separation = 1.9
-alignment = 0.163
-cohesion = 0.000312
-sight_radius = 20.0

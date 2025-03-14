@@ -43,7 +43,8 @@ func _physics_process(_delta: float):
 	for boid: Node2D in controller.boids:
 		if boid != self:
 			var relative_position = boid.position - position
-			if relative_position.length() < controller.sight_radius:
+			var angle_to_other = (-transform.y).angle_to(relative_position)
+			if relative_position.length() < controller.sight_radius and abs(angle_to_other) < controller.sight_fov :
 				num_nearby_boids += 1;
 				#if relative_position.length() < controller.sight_radius / 10.0:
 				separation += relative_position.normalized() / pow(relative_position.length(),2) # May need to weight closer ones stronger

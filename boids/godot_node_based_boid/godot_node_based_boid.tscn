@@ -1,8 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://b5lrj88p5lcy2"]
 
-[ext_resource type="Texture2D" uid="uid://csks0matygp5d" path="res://boid.png" id="1_vv1rb"]
 [ext_resource type="Script" uid="uid://docxb3hpnfx7n" path="res://boids/godot_node_based_boid/godot_node_based_boid.gd" id="2_uc33o"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vv1rb"]
+load_path = "res://.godot/imported/boid.png-8456e1fe60cfd707d6ab4f4deff9d97a.ctex"
+
 [node name="NodeBasedBoid" type="Sprite2D"]
-texture = ExtResource("1_vv1rb")
+texture = SubResource("CompressedTexture2D_vv1rb")
 script = ExtResource("2_uc33o")
