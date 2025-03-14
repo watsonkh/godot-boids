@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx5ueaiy0o8i"]
+
+[ext_resource type="Script" uid="uid://ngumikdavyrd" path="res://boids/godot_node_based_boid/boid_controller.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+
+[node name="BoidController" type="Node" parent="."]
+script = ExtResource("1_ig7tw")
+num_boids = 100
+boid_speed = 10.0
+separation = 1.9
+alignment = 0.163
+cohesion = 0.000312
+sight_radius = 20.0
